@@ -1,0 +1,167 @@
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* --- Header --- */
+    header {
+      background: #ffffff;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 45px;
+    }
+
+    .btn {
+      background: #009688;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 7px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .btn:hover { background: #00796b; }
+
+    /* --- Hero Section --- */
+    .hero {
+      background: linear-gradient(to bottom, #009688, #00796b);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    /* --- General Sections --- */
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #009688;
+    }
+
+    /* --- Cards Grid --- */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 10px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #00796b;
+    }
+
+    /* --- CTA Button --- */
+    .cta-btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #ff9800;
+      padding: 12px 25px;
+      color: white;
+      font-size: 17px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta-btn:hover { background: #e68900; }
+
+    /* --- WhatsApp Floating Button --- */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: #25D366;
+      color: white;
+      font-size: 26px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      z-index: 9999;
+    }
+
+    /* --- Map Modal --- */
+    #mapModal {
+      display:none; 
+      position:fixed; 
+      top:0; left:0; 
+      width:100%; height:100%;
+      background:rgba(0,0,0,0.7); 
+      padding:50px;
+      z-index: 99999;
+    }
+
+    #mapModal .modal-content {
+      background:white; 
+      padding:20px; 
+      border-radius:10px;
+      max-width:600px; 
+      margin:auto; 
+      position:relative;
+    }
+
+    #mapModal span {
+      position:absolute; 
+      right:10px; 
+      top:10px; 
+      cursor:pointer; 
+      font-size:20px;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #009688;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+  </style>
